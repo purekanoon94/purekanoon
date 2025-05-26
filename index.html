@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal Help by Purekanoon</title>
+  <meta name="description" content="Legal Help by Purekanoon - Abhay Kumar, BBA LL.B. student offering legal research, drafting, and court assistance.">
+  <meta name="keywords" content="Legal Help, Purekanoon, Abhay Kumar, Law Student, Legal Services">
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --primary-color: #002244;
+    }
+
+    [data-theme="dark"] {
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header, footer {
+      background: var(--primary-color);
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      margin: 0.5em;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2em;
+    }
+
+    h1, h2 {
+      color: var(--primary-color);
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 1em;
+    }
+
+    footer {
+      font-size: 0.9em;
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 1em;
+      right: 1em;
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 0.5em;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 15px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      margin: 0.5em 0;
+      padding: 0.7em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #004080;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
+  <header>
+    <h1>Legal Help by Purekanoon</h1>
+    <p>By Abhay Kumar</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>I am Abhay Kumar, a law student at Atal Bihari Vajpayee School of Legal Studies, CSJM University, Kanpur. Passionate about legal research, court proceedings, and expanding practical knowledge through internships and legal writing.</p>
+  </section>
+
+  <section id="education" class="container">
+    <h2>Education</h2>
+    <p><strong>BBA LL.B.</strong> (Hons.)<br>Atal Bihari Vajpayee School of Legal Studies, CSJM University, Kanpur</p>
+  </section>
+
+  <section id="experience" class="container">
+    <h2>Experience</h2>
+    <ul>
+      <li>Interned at District Court, Kanpur Nagar – Assisted in case file reading, observing proceedings</li>
+      <li>Legal Research Intern at LegalStartups – Wrote blogs on contemporary legal issues</li>
+      <li>Participated in legal aid camp and public awareness campaigns</li>
+    </ul>
+  </section>
+
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <ul>
+      <li>Legal Research & Drafting</li>
+      <li>Client Counseling</li>
+      <li>Understanding of Civil & Criminal Laws</li>
+      <li>Legal Writing (Blogs, Articles)</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Send Message" />
+    </form>
+  </section>
+
+  <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">☎</a>
+
+  <footer>
+    <p>&copy; 2025 Abhay Kumar | Legal Help by Purekanoon</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      document.documentElement.setAttribute("data-theme", currentTheme === "dark" ? "light" : "dark");
+    }
+  </script>
+</body>
+</html>
